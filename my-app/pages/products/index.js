@@ -19,7 +19,7 @@ function ProductList({ products }) {
 export default ProductList;
 
 export async function getStaticProps() {
-  const { params } = context;
+  //   const { params } = context;
   console.log('Regenerating product ${params.productID}');
   const response = await fetch('http://localhost:4000/products${params.productID}');
   const data = await response.json();
