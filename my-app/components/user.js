@@ -3,6 +3,7 @@ function User({ user }) {
     <>
       <p>{user.name}</p>
       <p>{user.email}</p>
+      <hr />
     </>
   );
 }

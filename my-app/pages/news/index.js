@@ -8,6 +8,7 @@ function NewsArticleList({ articles }) {
             <h2>
               {article.id} {article.title} | {article.category}
             </h2>
+            <hr />
           </div>
         );
       })}
@@ -17,7 +18,8 @@ function NewsArticleList({ articles }) {
 export default NewsArticleList;
 
 export async function getServerSideProps() {
-  const response = await fetch('https://localhost:3000/news');
+  console.log('Pre-rendering NewsArticleList');
+  const response = await fetch('http://localhost:3000/news');
   const data = await response.json();
 
   return {
