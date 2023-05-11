@@ -5,9 +5,13 @@ function Home() {
     <>
       <h1>NextJS Pre-Rendering</h1>
 
-      <Link href="/user">
+      <Link href="/users">
         <h1>User</h1>
       </Link>
+      <Link href='/posts'>
+        <a>Posts</a>
+      </Link>
+
     </>
   );
 }

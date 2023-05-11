@@ -21,7 +21,7 @@ export default Product;
 
 export async function getStaticProps(context) {
   const { params } = context;
-  const response = await fetch(`http://localhost:3000/products/${params.productID}`);
+  const response = await fetch(`http://localhost:4000/products/${params.productID}`);
   const data = await response.json();
   console.log(`Generating page for /products/${params.productID}`);
 
