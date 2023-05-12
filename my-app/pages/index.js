@@ -17,6 +17,9 @@ function Home() {
       <Link href="/products">
         <h2>products</h2>
       </Link>
+      <Link href="/dashboard">
+        <h2>Dashdoard</h2>
+      </Link>
     </>
   );
 }

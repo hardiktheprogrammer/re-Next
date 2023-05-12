@@ -1,5 +1,5 @@
 import User from '../components/user';
-
+import dashboard from '../components/dashboard';
 function UserList({ users }) {
   return (
     <>
