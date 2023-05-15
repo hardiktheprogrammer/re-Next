@@ -1,17 +1,17 @@
-import { initialize } from 'next/dist/server/lib/render-server';
 import { useState } from 'react';
 function EventList({ eventList }) {
-  const [events, setEvents] = useState(EventList);
+  const [events, setEvents] = useState(eventList);
 
   const fetchSportsEvents = async () => {
     const response = await fetch('http://localhost:4000/events?category=sports');
     const data = await response.json();
+    setEvents(data);
   };
   return (
     <>
       <button onClick={fetchSportsEvents}> sports Events</button>
       <h1>List of Events</h1>
-      {eventList.map((event) => {
+      {event.map((event) => {
         return (
           <div Key={event.id}>
             <h2>
@@ -26,7 +26,10 @@ function EventList({ eventList }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getServerSideProps(context) {
+  const { query } = context;
+  const { category } = query;
+  const queryString = category ? 'categ'
   const response = await fetch('http://localhost:4000/events');
   const data = await response.json();
 
