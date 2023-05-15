@@ -49,8 +49,8 @@
     ],
     "events": [
         {
-            "id": 1,
-            "title": "Event 1",
+            "id": 21,
+            "title": "Event 2",
             "description": "Description 1",
             "category": "sports",
             "date": "April 25"
