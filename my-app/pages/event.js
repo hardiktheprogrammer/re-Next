@@ -5,12 +5,11 @@ function EventList({ eventList }) {
       {eventList.map((event) => {
         return (
           <div Key={event.id}>
-                <h2>
-                    
-                    
-                    {event.id } {event.title} 
-                
-                </h2>
+            <h2>
+              {event.id} {event.title} {event.date} | {event.category}
+            </h2>
+            <p>{event.discription}</p>
+            <hr />
           </div>
         );
       })}

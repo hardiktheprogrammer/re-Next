@@ -8,6 +8,7 @@ function UserList({ users }) {
           <div key={user.id}>
             <User user={user} />
           </div>
+          
         );
       })}
     </>

@@ -20,6 +20,9 @@ function Home() {
       <Link href="/dashboard">
         <h2>Dashdoard</h2>
       </Link>
+      <Link href="/event">
+        <h2>Event</h2>
+      </Link>
     </>
   );
 }
