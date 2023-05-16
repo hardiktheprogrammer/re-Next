@@ -1,3 +1,3 @@
 export default function handler(req, res) {
-  res.status(200).json({ name: 'Blog  API Route' });
+  res.status(300).json({ name: 'Index  API Route' });
 }
