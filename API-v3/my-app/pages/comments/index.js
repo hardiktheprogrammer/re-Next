@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import {useState} from 'react';
 
 function CommentsPages() {
   const [comments, setComments] = useState([]);
@@ -11,10 +11,10 @@ function CommentsPages() {
   // first argument
   const submitComment = async () => {
     const response = await fetch('/api/comments', {
-      method: 'POST',
-      body: JSON.stringify({ comment }),
-      headers: {
-        'Content-Type': 'application/json',
+      method : 'POST',
+      body : JSON.stringify({comment}),
+      headers : {
+        'Content-Type' : 'application/json',
       },
     });
     const data = await response.json();
@@ -23,13 +23,15 @@ function CommentsPages() {
 
   return (
     <>
-      <input type="text" value={comment} onChange={(e) => setComment(e.target.value)} />
+      <input type="text" value={comment} onChange={
+    (e) => setComment(e.target.value)} />
       <button onClick={submitComment}>Submit Comment</button>
       <button onClick={fetchComments}>Load Comments</button>
       {comments.map((comment) => {
         return <div key={comment.id}> {comment.text} </div>;
-      })}
-    </>
+})
+}
+< />
   );
 }
 export default CommentsPages;
