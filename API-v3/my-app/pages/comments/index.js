@@ -27,7 +27,13 @@ function CommentsPages() {
       <button onClick={submitComment}>Submit Comment</button>
       <button onClick={fetchComments}>Load Comments</button>
       {comments.map((comment) => {
-        return <div key={comment.id}> {comment.text} </div>;
+        return (
+          <div key={comment.id}>
+            {comment.id}
+            {comment.text}
+            <button onClick={() => deletecomment(comment.id)}>Delete</button>
+          </div>
+        );
       })}
     </>
   );
