@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function CommentsPages() {
+function CommentsPage() {
   const [comments, setComments] = useState([]);
   const [comment, setComment] = useState("");
   const fetchComments = async () => {
@@ -21,6 +21,14 @@ function CommentsPages() {
     console.log(data);
   };
 
+  const deleteComment = async (commentId) => {
+    const response = await fetch(`/api/comments/${commentId}`, {
+      method: 'DELETE',
+    });
+    const data = await response.json();
+    console.log(data);
+    fetchComments();
+  };
   return (
     <>
       <input
@@ -31,9 +39,16 @@ function CommentsPages() {
       <button onClick={submitComment}>Submit Comment</button>
       <button onClick={fetchComments}>Load Comments</button>
       {comments.map((comment) => {
-        return <div key={comment.id}> {comment.text} </div>;
+        return (
+          <div key={comment.id}>
+            {comment.id}
+            {comment.text}
+            <button onClick={() => deleteComment(comment.id)}>Delete</button>
+          </div>
+        );
       })}
     </>
   );
 }
-export default CommentsPages;
+
+export default CommentsPage;
