@@ -1,4 +1,4 @@
-function comment({ comment }) {
+function comment({comment}) {
   return (
     <div>
       {comment.id}, {comment.text}
