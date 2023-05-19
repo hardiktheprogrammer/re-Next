@@ -10,6 +10,6 @@ export default function handler(req, res) {
     };
 
     comments.push(newComment);
-    res.status(203).json(newComment);
+    res.status(200).json(newComment);
   }
 }
