@@ -1,5 +1,7 @@
+import '../styles/globals.css';
+
 function Contact() {
-  return <h1>Contact page</h1>;
+  return <h2>Contact page</h2>;
 }
 
 export default Contact;

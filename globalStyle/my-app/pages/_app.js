@@ -4,4 +4,4 @@ import { Inter } from 'next/font/google';
 function Myapp({ Component, pageProps }) {
   return <component {...pageProps} />;
 }
-export default Myapp;
+export default Myapp
