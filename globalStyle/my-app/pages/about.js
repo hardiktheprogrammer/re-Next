@@ -1,6 +1,6 @@
 import '../styles/globals.css';
 function About() {
-  return <button className="btn btn-success">about Page</button>;
+  return <button className="{styles.highlight}">about Page</button>;
 }
 
 export default About;
