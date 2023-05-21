@@ -1,7 +1,7 @@
-import '../styles/globals.css';
+import styles from '../styles/Contact.module.css';
 
 function Contact() {
-  return <h2>Contact page</h2>;
+  return <h1 className={styles.highlight}>Contact page</h1>;
 }
 
 export default Contact;
