@@ -1,6 +1,6 @@
-import styles from '../styles/About.module.css';
+import styles from '../styles/About.module.scss';
 function About() {
-  return <button className={styles.highlight}>about Page</button>;
+  return <button className={styles.highlightscss}>about Page</button>;
 }
 
 export default About;
