@@ -1,3 +1,5 @@
 function Header() {
-  return <div> </div>;
+  return <div className="layout-header"> </div>;
 }
+
+export default Header;
