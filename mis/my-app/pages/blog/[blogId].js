@@ -1,5 +1,5 @@
-import Head from 'next/head';
-function Blog({title, description}) {
+import Head from "next/head";
+function Blog({ title, description }) {
   return (
     <>
       <Head>
@@ -15,8 +15,8 @@ export default Blog;
 export async function getStaticSideProps() {
   return {
     props: {
-      title: 'Article Title',
-      description: 'Article Description',
+      title: "Article Title",
+      description: "Article Description",
     },
   };
 }
