@@ -1,6 +1,16 @@
+import Head from 'next/head';
 import Footer from '../components/layout/Footer';
 function About() {
-  return <h1 ClassName="Content">About</h1>;
+  return (
+    <>
+      <Head>
+        <title>About RestroBar </title>
+
+        <meta name="description" content="White chaatni" />
+      </Head>
+      <h1 ClassName="Content">About</h1>
+    </>
+  );
 }
 export default About;
 
