@@ -3,7 +3,7 @@ import img from '../public/1.jpg';
 function PetsPage() {
   return (
     <div>
-      <Image src={img} placeholder="blur" alt="pet" width="100" height="200" />;
+      <Image src={img} placeholder="blur" blurDataURL="" alt="pet" width="100" height="200" />;
       {['1', '2', '3', '4', '5'].map((path) => {
         return (
           <div Key={path}>
