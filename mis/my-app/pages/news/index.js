@@ -1,7 +1,8 @@
 // import { Console } from 'console';
 
-function News({ data }) {
-  return <h1 className="content"> {data}</h1>;
+function News({data}) {
+  return <h1 className = "content">{data} <
+         /h1>;
 }
 
 export default News;
