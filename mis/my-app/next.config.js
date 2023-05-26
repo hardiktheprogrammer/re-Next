@@ -4,13 +4,13 @@ module.exports = {
   redirects: async () => {
     return [
       {
-        source: '/about',
-        destination: '/',
+        source: "/about",
+        destination: "/",
         permanent: true,
       },
       {
-        source: '/old-blog/:id',
-        destination: '/new-blog/:id',
+        source: "/old-blog/:id",
+        destination: "/new-blog/:id",
         permanent: true,
       },
     ];
