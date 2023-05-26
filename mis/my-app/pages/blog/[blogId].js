@@ -13,6 +13,7 @@ function Blog({ title, description }) {
 export default Blog;
 
 export async function getStaticSideProps() {
+  const user = process.env.DB_USER;
   return {
     props: {
       title: 'Article Title',
