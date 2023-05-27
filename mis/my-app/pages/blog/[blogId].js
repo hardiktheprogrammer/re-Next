@@ -14,6 +14,7 @@ export default Blog;
 
 export async function getStaticSideProps() {
   const user = process.env.DB_USER;
+  const password = process.env.DB_PASSWORD;
   return {
     props: {
       title: 'Article Title',
