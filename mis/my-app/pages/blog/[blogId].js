@@ -1,5 +1,5 @@
-import Head from 'next/head';
-function Blog({title, description}) {
+import Head from "next/head";
+function Blog({ title, description }) {
   return (
     <>
       <Head>
@@ -18,11 +18,13 @@ export default Blog;
 export async function getStaticSideProps() {
   const user = process.env.DB_USER;
   const password = process.env.DB_PASSWORD;
-  console.log(`Connecting to database with users ${user} and password ${password}`);
+  console.log(
+    `Connecting to database with users ${user} and password ${password}`
+  );
   return {
     props: {
-      title: 'Article Title',
-      description: 'Article Description',
+      title: "Article Title",
+      description: "Article Description",
     },
   };
 }
