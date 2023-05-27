@@ -1,5 +1,5 @@
+import {signIn, signOut, useSession} from 'next-auth/client';
 import Link from 'next/link';
-import { signIn, signOut, useSession } from 'next-auth/client';
 
 function Navbar() {
   const [session, loading] = useSession();
@@ -29,32 +29,31 @@ function Navbar() {
           <li>
             <Link href="/api/auth/signin">
               <a
-                onClick={(e) => {
-                  e.preventDefault();
-                  signIn('github');
-                }}
-              >
-                Sign In
-              </a>
-            </Link>
-          </li>
+  onClick =
+      {
+        (e) => {
+          e.preventDefault();
+          signIn('github');
+        }
+      } > Sign In</a>
+            </Link><
+      /li>
         )}
         {session && (
           <li>
-            <Link href="/api/auth/signout">
-              <a
-                onClick={(e) => {
-                  e.preventDefault();
-                  signOut();
-                }}
-              >
-                Sign Out
-              </a>
-            </Link>
-          </li>
+            <Link href="/api /
+          auth / signout ">
+      < a
+  onClick = {
+    (e) => {
+      e.preventDefault();
+      signOut();
+    }
+  } > Sign Out</a>
+            </Link></li>
         )}
-      </ul>
-    </nav>
+      </ul><
+            /nav>
   );
 }
 
