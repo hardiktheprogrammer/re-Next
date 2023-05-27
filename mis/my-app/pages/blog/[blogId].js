@@ -1,5 +1,5 @@
 import Head from 'next/head';
-function Blog({ title, description }) {
+function Blog({title, description}) {
   return (
     <>
       <Head>
