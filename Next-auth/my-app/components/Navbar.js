@@ -1,14 +1,15 @@
 import Link from 'next/link';
-import { signIn, signOut, useSession } from 'next-auth/client';
+import { signIn, signOut } from 'next-auth';
 
 function Navbar() {
   const [session, loading] = useSession();
+  console.log({ session, loading });
   return (
     <nav className="header">
       <h1 className="logo">
         <a href="#">NextAuth</a>
       </h1>
-      <ul className={`main-nav ${!session && loading ? 'loading' : 'loaded'}`}>
+      <ul className={`main-nav ${!session && loading ? 'loading' : 'loading'}`}>
         <li>
           <Link href="/">
             <a>Home</a>

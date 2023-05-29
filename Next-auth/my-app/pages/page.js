@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/globals.css';
-import { useSession } from 'next-auth/client';
+import { useSession } from 'next-auth/client ';
 
 export default function Home() {
   const [session, loading] = useSession();
