@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import { signIn, signOut } from 'next-auth';
+import { signIn, signOut } from "next-auth";
+import Link from "next/link";
 
 function Navbar() {
   const [session, loading] = useSession();
@@ -9,7 +9,7 @@ function Navbar() {
       <h1 className="logo">
         <a href="#">NextAuth</a>
       </h1>
-      <ul className={`main-nav ${!session && loading ? 'loading' : 'loading'}`}>
+      <ul className={`main-nav ${!session && loading ? "loading" : "loading"}`}>
         <li>
           <Link href="/">
             <a>Home</a>
@@ -32,9 +32,10 @@ function Navbar() {
               <a
                 onClick={(e) => {
                   e.preventDefault();
-                  signIn('github');
+                  signIn("github");
                 }}
               >
+                {" "}
                 Sign In
               </a>
             </Link>
@@ -42,13 +43,17 @@ function Navbar() {
         )}
         {session && (
           <li>
-            <Link href="/api/auth/signout">
+            <Link
+              href="/api /
+          auth / signout "
+            >
               <a
                 onClick={(e) => {
                   e.preventDefault();
                   signOut();
                 }}
               >
+                {" "}
                 Sign Out
               </a>
             </Link>
