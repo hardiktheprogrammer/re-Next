@@ -1,7 +1,22 @@
-import { useSession } from 'next-auth/client';
+import { useState, useEffect } from 'react';
+import { getSession, signIn } from 'next-auth/client';
 function Dashboard() {
-  const [session, loading] = useSession();
-  console.log({ session, loading });
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const securePage = async () => {
+      const session = await getSession();
+      if (!session) {
+        signIn();
+      } else {
+        setLoading(false);
+      }
+    };
+    securePage();
+  }, []);
+
+  if (loading) {
+    return <h2> Loading</h2>;
+  }
   return <h1>Dahboard page</h1>;
 }
 
