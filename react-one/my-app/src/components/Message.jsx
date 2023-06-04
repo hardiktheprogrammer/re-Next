@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component } from "react";
 class Message extends Components {
   render() {
     return <h1> This is a class component</h1>;
