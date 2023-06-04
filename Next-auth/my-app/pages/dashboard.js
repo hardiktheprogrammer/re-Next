@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
-import { getSession, signIn } from 'next-auth/client';
+import {getSession, signIn} from 'next-auth/client';
+import {useEffect, useState} from 'react';
+
 function Dashboard() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -15,9 +16,9 @@ function Dashboard() {
   }, []);
 
   if (loading) {
-    return <h2> Loading</h2>;
+    return <h2>Loading</h2>;
   }
   return <h1>Dahboard page</h1>;
-}
+  }
 
-export default Dashboard;
+  export default Dashboard;
