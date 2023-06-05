@@ -10,12 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Hello />
-      <Message /> */}
-      <Profile name="hardik" lastname="sharma" />
-      <Profile name=" Hardick" lastname="ji" />
-      <h3> Live in your metrix </h3>
-      <Profile name="Haardick" lastname="shri" />
+      <Message messagecode="10" messagecontent="This is a message of escape the reallty" />
     </div>
   );
 }
