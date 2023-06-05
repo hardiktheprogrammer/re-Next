@@ -1,7 +1,7 @@
 function profile(props) {
   console.log(props);
 
-  props.name = 'jakob';
+  props.name = "jakob";
   return (
     <h1>
       Name:{props.name}
