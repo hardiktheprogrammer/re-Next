@@ -1,6 +1,6 @@
-const name = 'Hardik';
+const name = "Hardik";
 const displayMessage = () => {
-  return 'I Need Help!';
+  return "I Need Help!";
 };
 function Hello() {
   return <h1> Tolal is {displayMessage()}</h1>;
