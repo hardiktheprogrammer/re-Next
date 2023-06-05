@@ -10,7 +10,7 @@ function App() {
 
   return (
     <div className="App">
-      <Message messagecode="10" messagecontent="This is a message of escape the reallty" />
+      <Profile name="sharma" lastname="ji" />
     </div>
   );
 }

@@ -1,11 +1,11 @@
 function profile(props) {
   console.log(props);
+
+  props.name = 'jakob';
   return (
     <h1>
-      {' '}
       Name:{props.name}
       {props.lastname}
-      {props.children}
     </h1>
   );
 }
