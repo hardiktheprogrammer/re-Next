@@ -5,7 +5,7 @@ function FunctionEvent() {
   return (
     <div>
       Function Component
-      <button onClick={handleClick()}> Click me </button>
+      <button onClick={handleClick}> Click me </button>
     </div>
   );
 }
