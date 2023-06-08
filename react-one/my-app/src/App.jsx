@@ -9,6 +9,7 @@ import Counter from './components/counter';
 import Resume from './components/resume';
 import FunctionalEvent from './components/FunctionEvent';
 import ClassEvent from './components/classEvent';
+import FunctionalCounter from './components/functionalCounter';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -20,6 +21,7 @@ function App() {
       <Resume name="DoomSingh" />
       <Counter />
       <FunctionalEvent />
+      <FunctionalCounter />
       <ClassEvent />
     </div>
   );
