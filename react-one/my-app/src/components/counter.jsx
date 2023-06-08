@@ -6,20 +6,20 @@ class Counter extends Component {
     this.state = {
       counter: 0,
     };
-    this.increment = this.increment.bind(this);
+    // this.increment = this.increment.bind(this);
   }
 
-  increment() {
+  increment = () => {
     console.log(this);
     this.setState({
       counter: this.state.counter + 1,
     });
-  }
+  };
   render() {
     return (
       <div>
-        <h3> Counting 1 {this.state.counter}</h3>
-        <button onClick={() => this.increment}> Incremen</button>
+        <h3> Counting {this.state.counter}</h3>
+        <button onClick={this.increment}> Increment</button>
       </div>
     );
   }
