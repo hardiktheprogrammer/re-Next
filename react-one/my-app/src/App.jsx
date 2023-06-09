@@ -10,6 +10,7 @@ import Resume from './components/resume';
 import FunctionalEvent from './components/FunctionEvent';
 import ClassEvent from './components/classEvent';
 import FunctionalCounter from './components/functionalCounter';
+import ConditionalComponents from './components/conditionalComponents';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -23,6 +24,7 @@ function App() {
       <FunctionalEvent />
       <FunctionalCounter />
       <ClassEvent />
+      <ConditionalComponents />
     </div>
   );
 }
