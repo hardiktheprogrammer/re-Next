@@ -5,25 +5,12 @@ import Counter from './counter';
 export default function ConditionalComponent() {
   const [display, setDisplay] = useState(true);
   let output;
-  if (display) {
-    outpost = <h3>Loop Whole 🕳️ </h3>;
-  }
-  if (display) {
-    return <div></div>;
-  } else {
-  }
 
   if (display) {
-    return (
-      <div>
-        <h3>Living in metrix</h3>
-        <h3>State is missing</h3>
-      </div>
-    );
+    output = <h3>Living in metrix</h3>;
   } else {
-    return ( <div></div>;
-    
-    )
+    output = <h3></h3>;
   }
-    
+
+  return <div>{output}</div>;
 }
