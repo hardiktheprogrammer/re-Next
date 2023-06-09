@@ -11,6 +11,7 @@ import FunctionalEvent from './components/FunctionEvent';
 import ClassEvent from './components/classEvent';
 import FunctionalCounter from './components/functionalCounter';
 import ConditionalComponents from './components/conditionalComponents';
+import Product from './components/product';
 function App() {
   const [count, setCount] = useState(0);
 
@@ -25,6 +26,7 @@ function App() {
       <FunctionalCounter />
       <ClassEvent />
       <ConditionalComponents />
+      <Product />
     </div>
   );
 }
