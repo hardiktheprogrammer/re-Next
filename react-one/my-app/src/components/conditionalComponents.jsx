@@ -1,6 +1,17 @@
 import { useState } from 'react';
 export default function ConditionalComponent() {
-  const [Display, setDisplay] = useState(true);
+  const [display, setDisplay] = useState(true);
+  if (display) {
+    return (
+      <div>
+        <h3>Loop Whole 🕳️</h3>
+      </div>
+    );
+  } else {
+    <div>
+      <h3></h3>
+    </div>;
+  }
   return (
     <div>
       <h3>Living in metrix</h3>
