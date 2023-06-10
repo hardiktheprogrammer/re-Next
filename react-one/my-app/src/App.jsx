@@ -2,6 +2,7 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
+import Form from './components/form';
 // import Hello from './components/hello';
 import Message from './components/Message';
 import Profile from './components/profile';
@@ -27,6 +28,7 @@ function App() {
       <ClassEvent />
       <ConditionalComponents />
       <Product />
+      <Form />
     </div>
   );
 }

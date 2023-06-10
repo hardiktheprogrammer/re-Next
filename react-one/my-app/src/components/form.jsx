@@ -1,10 +1,18 @@
 import { Component } from 'react';
 
 class Form extends Component {
-  render() {
-    return;
+  handleChange = (event) => {
+    console.log(event);
+  };
 
-    <div></div>;
+  render() {
+    return (
+      <div>
+        <form>
+          <input onChange={this.handleChange} type="text" value="Fistlie"></input>
+        </form>
+      </div>
+    );
   }
 }
 export default Form;
