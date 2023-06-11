@@ -1,10 +1,16 @@
 import { Component } from 'react';
 
 class Form extends Component {
-  handleChange = (event) => {
-    console.log(event);
+  state = {
+    firstname: '',
   };
+  handleChange = (event) => {
+    this.setState({
+      fistname: event.target.value,
+    });
 
+    console.log(this.state.fistname);
+  };
   render() {
     return (
       <div>
