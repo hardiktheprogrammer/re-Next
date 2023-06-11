@@ -15,14 +15,22 @@ class Form extends Component {
       lastname: event.target.value,
     });
   };
-
+  handleSubmit = (event) => {
+    event.preventDefault();
+    console.log({
+      fname: this.state.firstname,
+      sname: this.state.lastname,
+    });
+  };
   render() {
     return (
       <div>
         form
-        <form>
+        <form onSubmit={this.handleSubmit}>
           <input onChange={this.handleChange} type="text" value="Fistlie" />
           <input value={this.state.lastname} type="text" onChange={this.handleLastNameChange} />
+
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
