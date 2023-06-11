@@ -3,6 +3,7 @@ import { Component } from 'react';
 class Form extends Component {
   state = {
     firstname: '',
+    lastname: '',
   };
   handleChange = (event) => {
     this.setState({
@@ -14,8 +15,10 @@ class Form extends Component {
   render() {
     return (
       <div>
+        form
         <form>
           <input onChange={this.handleChange} type="text" value="Fistlie"></input>
+          <input value={this.state.lastname} type="text" onChange={this.handleLastNameChange}></input>
         </form>
       </div>
     );
