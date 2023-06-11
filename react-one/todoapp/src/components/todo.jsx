@@ -5,7 +5,10 @@ export default function Todo() {
 
   return (
     <div>
-      <form></form>
+      <form>
+        <input type="text"></input>
+        <button type="submit"> Add </button>
+      </form>
     </div>
   );
 }
