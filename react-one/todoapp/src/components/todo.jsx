@@ -23,7 +23,9 @@ export default function Todo() {
         <button type="submit"> Add </button>
       </form>
       {todoList.map((item) => (
-        <ListItem></ListItem>
+        <ListItem Key={item} name={item}>
+          List Item
+        </ListItem>
       ))}
     </div>
   );
