@@ -1,7 +1,5 @@
+import styles from './style.module.css';
+
 export default function ModuleComponents() {
-  return (
-    <div>
-      <h1></h1>
-    </div>
-  );
+  return <div clasName={styles.header}></div>;
 }
