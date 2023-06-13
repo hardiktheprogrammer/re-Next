@@ -1,6 +1,13 @@
+body{
+
+    margin: 0;
+}
+
 .header {
 
     background-color: royalblue;
-    height: 40px;
+    height: 10px;
     font-size:40px;
+    color: red;
+    padding:40px;
 }
