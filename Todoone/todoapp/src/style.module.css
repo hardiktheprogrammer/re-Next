@@ -19,9 +19,22 @@ body{
 }
 
 .todoinput{
-    width:30%;
+    width:100%;
     border: none;
     border-bottom:1px solid whitesmoke;
+    height: 45px;
+    text-align: center;
+    font-size: 1.3rem;  
 
     
+}
+.todobutton{
+
+    width:30%;
+    border:none;
+    height:60px;
+    background-color: rgb(11, 11, 11);
+    font-size: 1rem;
+    margin: 3rem;
+
 }
