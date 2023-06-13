@@ -11,3 +11,17 @@ body{
     color: red;
     padding:40px;
 }
+
+.todoform {
+    width: 300%;
+    margin: 30px;
+    margin-top: 20px;
+}
+
+.todoinput{
+    width:30%;
+    border: none;
+    border-bottom:1px solid whitesmoke;
+
+    
+}
