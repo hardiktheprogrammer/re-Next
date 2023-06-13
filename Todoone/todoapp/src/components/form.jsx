@@ -1,4 +1,4 @@
-const form = () => {
+const Form = () => {
   return (
     <div>
       <form>
@@ -8,3 +8,5 @@ const form = () => {
     </div>
   );
 };
+
+export default Form;
