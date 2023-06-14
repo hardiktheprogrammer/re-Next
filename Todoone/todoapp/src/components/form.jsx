@@ -1,4 +1,10 @@
 import styles from '../style.module.css';
+const Form = ({ todo, setTodo, todoList, setTodoList }) => {
+  const handleChange = (event) => {
+    setTodo(event.target.value);
+    console.log(todo);
+  };
+};
 const Form = () => {
   return (
     <div className={styles.todoform}>
