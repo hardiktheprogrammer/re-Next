@@ -38,3 +38,11 @@ body{
     margin: 3rem;
 
 }
+
+.todoitem{
+
+    margin:auto;
+    border:2px solid whitesmoke;
+
+    padding:20px
+}
